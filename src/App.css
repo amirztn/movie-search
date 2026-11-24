@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #141414;
+  color: #f2f2f2;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: #1f1f1f;
+  color: inherit;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.status {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.status.error {
+  color: #ff6b6b;
+}
+
+.movie-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.movie-card {
+  background: #1f1f1f;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+}
+
+.movie-card img,
+.no-poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.no-poster {
+  display: grid;
+  place-items: center;
+  background: #2a2a2a;
+  color: #888;
+}
+
+.movie-card h3 {
+  font-size: 0.95rem;
+  margin: 0.5rem 0.6rem 0.2rem;
+}
+
+.movie-card p {
+  margin: 0 0.6rem;
+  color: #999;
+  font-size: 0.85rem;
+}
